@@ -9,9 +9,7 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    int codigocidade, numeroturistico, area;
-    float populacao;
-    double pib;
+    int codigocidade, numeroturistico, area, pib, populacao;
     char nome [20];
 
     // Cadastro das Cartas:
@@ -25,15 +23,15 @@ int main() {
     printf ("insira o codigo da cidade:\n", codigocidade);
     scanf ("%d", &codigocidade);
 
-    printf ("insira a população da cidade:\n", populacao);
-    scanf ("%f", &populacao);
-
-    printf ("insira a area da cidade:\n", area);
-    scanf ("%d", &area);
+    printf ("insira a area da cidade:\n", area); //verificar alteracao de inteiro para float
+    scanf ("%.3d", &area);
 
     printf ("insira quantidade de pontos turisticos da cidade:\n", numeroturistico);
     scanf ("%d", &numeroturistico);
     
+    printf ("insira a população da cidade:\n", populacao);
+    scanf ("%.3d", &populacao);
+
     printf ("insira o pib da cidade:\n", pib);
     scanf ("%d", &pib);
 
@@ -42,10 +40,12 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     printf ("nome da cidade: %s\n", nome);
     printf ("codigo da cidade: %d\n", codigocidade);
-    printf ("população da cidade: %.3f milhões\n", populacao);
     printf ("área da area: %.3d kM²\n", area);
-    printf ("quantidade de pontos turisticos: %d\n", numeroturistico);
-    printf ("pib da cidade: %.2d mil\n", pib);
+    printf (" quantidade de pontos turisticos: %d\n", numeroturistico);
+    printf ("população da cidade: %.3d milhões\n", populacao);
+    printf (" pib da cidade: %.2d mil\n", pib);
+
 
     return 0;
+
 }
