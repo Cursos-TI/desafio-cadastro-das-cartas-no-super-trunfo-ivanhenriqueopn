@@ -7,44 +7,43 @@
 //Teste larissa
 
 int main() {
+    printf ("***Super Trunfo***\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    int codigocidade, numeroturistico, area, pib, populacao;
-    char nome [20];
-
+    int codcidade, populacao, area, pib, turistico;
+    char nome[30];
+   
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    printf("Super trunfo\n", nome);
+    printf("digite o código número da cidade: \n");
+    scanf("%d", &codcidade);
 
-    printf ("insira o nome da cidade:\n", nome);
-    scanf ("%s", &nome);
+    printf("digite o nome da cidade: \n");
+    scanf("%s", &nome);
 
-    printf ("insira o codigo da cidade:\n", codigocidade);
-    scanf ("%d", &codigocidade);
+    printf("digite a população da cidade: \n");
+    scanf("%d", &populacao);
 
-    printf ("insira a area da cidade:\n", area); //verificar alteracao de inteiro para float
-    scanf ("%.3d", &area);
+    printf("digite a área da cidade: \n");
+    scanf("%d", &area);
 
-    printf ("insira quantidade de pontos turisticos da cidade:\n", numeroturistico);
-    scanf ("%d", &numeroturistico);
+    printf("digite o PIB da cidade: \n");
+    scanf("%d", &pib);
+
+    printf("digite a quantidade de pontos turisticos da cidade: \n");
+    scanf("%d", &turistico);
     
-    printf ("insira a população da cidade:\n", populacao);
-    scanf ("%.3d", &populacao);
-
-    printf ("insira o pib da cidade:\n", pib);
-    scanf ("%d", &pib);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    printf ("nome da cidade: %s\n", nome);
-    printf ("codigo da cidade: %d\n", codigocidade);
-    printf ("área da area: %.3d kM²\n", area);
-    printf (" quantidade de pontos turisticos: %d\n", numeroturistico);
-    printf ("população da cidade: %.3d milhões\n", populacao);
-    printf (" pib da cidade: %.2d mil\n", pib);
-
+    printf("Codigo da cidade: %d\n", codcidade);
+    printf("Nome cidade: %s\n", nome);
+    printf("População total: %d Milhões\n", populacao);
+    printf("Área total: %d KM²\n", area);
+    printf("PIB é: %d Bilhões\n", pib);
+    printf("Totado de pontos turisticos: %d\n", turistico);
 
     return 0;
 
