@@ -85,7 +85,7 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     /*
-    Finalizando mostrando os dados das cartas 1 e carta 2
+    Finalizando, mostrando os dados das cartas 1 e carta 2
     deacordo com oque foi inserido anteriormente
     */
     printf("Carta 1:\n");
