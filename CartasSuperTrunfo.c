@@ -7,9 +7,19 @@
 //Teste larissa
 
 int main() {
-   printf("###SUPER TRUNFO###\n");
+
+    //Título
+   printf("###SUPER TRUNFO###\n"); 
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    /*
+    Abaixo, definindo as variáveis
+    variavel seguido do número 1, representa carta 1
+    variavel seguido do número 2, representa carta 2
+
+    */
    char estado1, estado2; 
    char codigocarta1[20]; 
    char codigocarta2[20];
@@ -23,6 +33,21 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+
+    /*
+    Entradas e saídas de dados
+    primero solicitando e depois inserindo os dados da carta 1
+    exemplo: letra da carta1 = 'A'
+    código da carta 1 = "A01"
+    nome da cidade: Goiana
+    e assim sucessivamente.
+    Após inserir os dados da carta 1, inserir o da carta 2
+    exemplo: letra da carta2 = 'B'
+    código da carta 1 = "B01"
+    nome da cidade exemplo: Acaú
+    e assim sucessivamente.
+    
+    */
    printf("A carta 1: \n");
    printf("Insira a letra correspondente ao estado: ");
    scanf("%c", &estado1);
@@ -58,6 +83,11 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    /*
+    Finalizando mostrando os dados das cartas 1 e carta 2
+    deacordo com oque foi inserido anteriormente
+    */
     printf("Carta 1:\n");
     printf("A letra que representa o estado é: %c \n", estado1);
     printf("O código que representa o estado é: %s \n", codigocarta1);
